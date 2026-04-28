@@ -1,0 +1,585 @@
+[gd_scene format=3 uid="uid://voqi0jl83nc4"]
+
+[ext_resource type="Script" path="res://exports/Levels/wf.gd" id="1_dilhk"]
+[ext_resource type="PackedScene" path="res://exports/player.tscn" id="2_3mhv4"]
+[ext_resource type="PackedScene" path="res://exports/Objects/helper_objects/Block.tscn" id="3_3mhv4"]
+[ext_resource type="Script" path="res://exports/Levels/area_2d.gd" id="4_rf6l5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_syshm"]
+size = Vector2(137, 307)
+
+[node name="Level1" type="Node2D" unique_id=1436371859]
+
+[node name="WF" type="Node" parent="." unique_id=141942704]
+script = ExtResource("1_dilhk")
+
+[node name="Background" type="ColorRect" parent="WF" unique_id=556647426 groups=["Tilemap"]]
+anchors_preset = -1
+anchor_left = -1.1614584
+anchor_top = -1.4984568
+anchor_right = 0.8125
+anchor_bottom = 2.1404321
+offset_left = -1269.0
+offset_top = -521.0
+offset_right = 1765.0
+offset_bottom = 1162.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" parent="WF" unique_id=1088464787 groups=["Tilemap"] instance=ExtResource("2_3mhv4")]
+position = Vector2(-1020, -316)
+
+[node name="ColorRect" parent="WF" unique_id=344459800 instance=ExtResource("3_3mhv4")]
+offset_left = -1233.0
+offset_top = -278.0
+offset_right = -710.0
+offset_bottom = -250.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect2" parent="WF" unique_id=291772161 instance=ExtResource("3_3mhv4")]
+offset_left = -722.0
+offset_top = -268.0
+offset_right = -696.0
+offset_bottom = 637.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect10" parent="WF" unique_id=1263977260 instance=ExtResource("3_3mhv4")]
+offset_left = -1271.0
+offset_top = -793.0
+offset_right = -1234.0
+offset_bottom = 1181.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect65" parent="WF" unique_id=1090167985 instance=ExtResource("3_3mhv4")]
+offset_left = 341.0
+offset_top = -1220.0
+offset_right = 378.0
+offset_bottom = -864.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect16" parent="WF" unique_id=227476953 instance=ExtResource("3_3mhv4")]
+offset_left = -2613.0
+offset_top = -1493.0
+offset_right = -2582.0
+offset_bottom = 2569.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect33" parent="WF" unique_id=430247999 instance=ExtResource("3_3mhv4")]
+offset_left = 2707.0
+offset_top = -1154.0
+offset_right = 2742.0
+offset_bottom = 2582.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect8" parent="WF" unique_id=560837438 instance=ExtResource("3_3mhv4")]
+offset_left = -1173.0
+offset_top = -43.0
+offset_right = -1147.0
+offset_bottom = 644.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect4" parent="WF" unique_id=1809011811 instance=ExtResource("3_3mhv4")]
+offset_left = -506.0
+offset_top = -277.0
+offset_right = -480.0
+offset_bottom = 31.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect5" parent="WF" unique_id=2025004412 instance=ExtResource("3_3mhv4")]
+offset_left = -506.0
+offset_top = -277.0
+offset_right = -30.0
+offset_bottom = -250.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect11" parent="WF" unique_id=1146165253 instance=ExtResource("3_3mhv4")]
+offset_left = 199.0
+offset_top = -272.0
+offset_right = 675.0
+offset_bottom = -245.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect6" parent="WF" unique_id=1933957281 instance=ExtResource("3_3mhv4")]
+offset_left = -53.0
+offset_top = -277.0
+offset_right = -30.0
+offset_bottom = 56.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect7" parent="WF" unique_id=163321505 instance=ExtResource("3_3mhv4")]
+offset_left = 199.0
+offset_top = -271.0
+offset_right = 222.0
+offset_bottom = 62.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect34" parent="WF" unique_id=1587056817 instance=ExtResource("3_3mhv4")]
+offset_left = 972.0
+offset_top = -1475.0
+offset_right = 1001.0
+offset_bottom = -167.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect51" parent="WF" unique_id=1872815030 instance=ExtResource("3_3mhv4")]
+offset_left = 1377.0
+offset_top = -1208.0
+offset_right = 1418.0
+offset_bottom = 87.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect52" parent="WF" unique_id=475279883 instance=ExtResource("3_3mhv4")]
+offset_left = 1800.0
+offset_top = -191.0
+offset_right = 2434.0
+offset_bottom = -161.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect53" parent="WF" unique_id=1665580126 instance=ExtResource("3_3mhv4")]
+offset_left = 1834.0
+offset_top = -397.0
+offset_right = 2703.0
+offset_bottom = -367.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect54" parent="WF" unique_id=62099047 instance=ExtResource("3_3mhv4")]
+offset_left = 1389.0
+offset_top = -1206.0
+offset_right = 2194.0
+offset_bottom = -1176.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect55" parent="WF" unique_id=2137348908 instance=ExtResource("3_3mhv4")]
+offset_left = 2387.0
+offset_top = -1206.0
+offset_right = 2424.0
+offset_bottom = -992.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect58" parent="WF" unique_id=606416383 instance=ExtResource("3_3mhv4")]
+offset_left = 1584.0
+offset_top = -1018.0
+offset_right = 1621.0
+offset_bottom = -804.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect61" parent="WF" unique_id=711233116 instance=ExtResource("3_3mhv4")]
+offset_left = 1580.0
+offset_top = -607.0
+offset_right = 1617.0
+offset_bottom = -393.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect59" parent="WF" unique_id=1623664282 instance=ExtResource("3_3mhv4")]
+offset_left = 2382.0
+offset_top = -821.0
+offset_right = 2419.0
+offset_bottom = -607.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect56" parent="WF" unique_id=871426068 instance=ExtResource("3_3mhv4")]
+offset_left = 1583.0
+offset_top = -1030.0
+offset_right = 2422.0
+offset_bottom = -992.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect60" parent="WF" unique_id=136313670 instance=ExtResource("3_3mhv4")]
+offset_left = 1583.0
+offset_top = -639.0
+offset_right = 2422.0
+offset_bottom = -601.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect57" parent="WF" unique_id=356810244 instance=ExtResource("3_3mhv4")]
+offset_left = 1582.0
+offset_top = -819.0
+offset_right = 2421.0
+offset_bottom = -781.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect3" parent="WF" unique_id=644114651 instance=ExtResource("3_3mhv4")]
+offset_left = -1257.0
+offset_top = 201.0
+offset_right = -1164.0
+offset_bottom = 227.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect15" parent="WF" unique_id=1390743692 instance=ExtResource("3_3mhv4")]
+offset_left = -1017.0
+offset_top = 747.0
+offset_right = -924.0
+offset_bottom = 773.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect13" parent="WF" unique_id=1391927523 instance=ExtResource("3_3mhv4")]
+offset_left = -1982.0
+offset_top = 289.0
+offset_right = -1255.0
+offset_bottom = 315.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect22" parent="WF" unique_id=1501636338 instance=ExtResource("3_3mhv4")]
+offset_left = -2602.0
+offset_top = -111.0
+offset_right = -2031.0
+offset_bottom = -85.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect28" parent="WF" unique_id=1933988883 instance=ExtResource("3_3mhv4")]
+offset_left = -1743.0
+offset_top = -161.0
+offset_right = -1261.0
+offset_bottom = -135.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect29" parent="WF" unique_id=584874916 instance=ExtResource("3_3mhv4")]
+offset_left = -1425.0
+offset_top = -796.0
+offset_right = -1239.0
+offset_bottom = -770.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect26" parent="WF" unique_id=691986322 instance=ExtResource("3_3mhv4")]
+offset_left = -2584.0
+offset_top = -700.0
+offset_right = -1739.0
+offset_bottom = -674.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect12" parent="WF" unique_id=1485139526 instance=ExtResource("3_3mhv4")]
+offset_left = -2462.0
+offset_top = 772.0
+offset_right = -2246.0
+offset_bottom = 798.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect25" parent="WF" unique_id=377086832 instance=ExtResource("3_3mhv4")]
+offset_left = -2462.0
+offset_top = 119.0
+offset_right = -2430.0
+offset_bottom = 798.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect17" parent="WF" unique_id=1702158403 instance=ExtResource("3_3mhv4")]
+offset_left = -2604.0
+offset_top = 1256.0
+offset_right = -1923.0
+offset_bottom = 1282.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect18" parent="WF" unique_id=1867511091 instance=ExtResource("3_3mhv4")]
+offset_left = -1926.0
+offset_top = 964.0
+offset_right = -1245.0
+offset_bottom = 990.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect19" parent="WF" unique_id=1196833760 instance=ExtResource("3_3mhv4")]
+offset_left = -1844.0
+offset_top = 967.0
+offset_right = -1817.0
+offset_bottom = 1095.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect30" parent="WF" unique_id=732930684 instance=ExtResource("3_3mhv4")]
+offset_left = -126.0
+offset_top = 1193.0
+offset_right = -99.0
+offset_bottom = 1321.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect21" parent="WF" unique_id=624135906 instance=ExtResource("3_3mhv4")]
+offset_left = -1741.0
+offset_top = 292.0
+offset_right = -1714.0
+offset_bottom = 420.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect24" parent="WF" unique_id=153716061 instance=ExtResource("3_3mhv4")]
+offset_left = -2055.0
+offset_top = -96.0
+offset_right = -2028.0
+offset_bottom = 133.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect27" parent="WF" unique_id=2066846660 instance=ExtResource("3_3mhv4")]
+offset_left = -1871.0
+offset_top = -682.0
+offset_right = -1844.0
+offset_bottom = -279.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect23" parent="WF" unique_id=1080505223 instance=ExtResource("3_3mhv4")]
+offset_left = -1741.0
+offset_top = 292.0
+offset_right = -1741.0
+offset_bottom = 420.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect20" parent="WF" unique_id=1612714311 instance=ExtResource("3_3mhv4")]
+offset_left = -2334.0
+offset_top = 783.0
+offset_right = -2307.0
+offset_bottom = 911.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect9" parent="WF" unique_id=328557037 instance=ExtResource("3_3mhv4")]
+offset_left = -595.0
+offset_top = 880.0
+offset_right = 2705.0
+offset_bottom = 906.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect36" parent="WF" unique_id=695456750 instance=ExtResource("3_3mhv4")]
+offset_left = -443.0
+offset_top = 377.0
+offset_right = 1129.0
+offset_bottom = 403.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect64" parent="WF" unique_id=709319894 instance=ExtResource("3_3mhv4")]
+offset_left = -2208.0
+offset_top = -1140.0
+offset_right = 371.0
+offset_bottom = -1102.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect37" parent="WF" unique_id=558664674 instance=ExtResource("3_3mhv4")]
+offset_left = 610.0
+offset_top = 64.0
+offset_right = 1416.0
+offset_bottom = 112.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect62" parent="WF" unique_id=965965048 instance=ExtResource("3_3mhv4")]
+offset_left = 1665.0
+offset_top = 68.0
+offset_right = 2456.0
+offset_bottom = 116.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect45" parent="WF" unique_id=885114285 instance=ExtResource("3_3mhv4")]
+offset_left = -2251.0
+offset_top = 2251.0
+offset_right = -1431.0
+offset_bottom = 2284.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect41" parent="WF" unique_id=2020683791 instance=ExtResource("3_3mhv4")]
+offset_left = -1228.0
+offset_top = 1463.0
+offset_right = -1187.0
+offset_bottom = 2325.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect46" parent="WF" unique_id=157271673 instance=ExtResource("3_3mhv4")]
+offset_left = -1858.0
+offset_top = 1656.0
+offset_right = -1596.0
+offset_bottom = 1694.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect48" parent="WF" unique_id=893738533 instance=ExtResource("3_3mhv4")]
+offset_left = -1479.0
+offset_top = 1839.0
+offset_right = -1217.0
+offset_bottom = 1877.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect49" parent="WF" unique_id=929431258 instance=ExtResource("3_3mhv4")]
+offset_left = -1229.0
+offset_top = 2302.0
+offset_right = -967.0
+offset_bottom = 2340.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect50" parent="WF" unique_id=1630620242 instance=ExtResource("3_3mhv4")]
+offset_left = -463.0
+offset_top = 2264.0
+offset_right = -201.0
+offset_bottom = 2302.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect47" parent="WF" unique_id=529719976 instance=ExtResource("3_3mhv4")]
+offset_left = -1883.0
+offset_top = 1395.0
+offset_right = -1842.0
+offset_bottom = 2098.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect42" parent="WF" unique_id=829792509 instance=ExtResource("3_3mhv4")]
+offset_left = -895.0
+offset_top = 1460.0
+offset_right = -851.0
+offset_bottom = 2167.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect43" parent="WF" unique_id=541749727 instance=ExtResource("3_3mhv4")]
+offset_left = -575.0
+offset_top = 1451.0
+offset_right = -534.0
+offset_bottom = 2023.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect44" parent="WF" unique_id=52893677 instance=ExtResource("3_3mhv4")]
+offset_left = -245.0
+offset_top = 1595.0
+offset_right = -201.0
+offset_bottom = 2302.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect63" parent="WF" unique_id=754008229 instance=ExtResource("3_3mhv4")]
+offset_left = 162.0
+offset_top = 1857.0
+offset_right = 206.0
+offset_bottom = 2564.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect67" parent="WF" unique_id=1656431656 instance=ExtResource("3_3mhv4")]
+offset_left = 468.0
+offset_top = 1857.0
+offset_right = 512.0
+offset_bottom = 2564.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect70" parent="WF" unique_id=651088101 instance=ExtResource("3_3mhv4")]
+offset_left = 1111.0
+offset_top = 1604.0
+offset_right = 1155.0
+offset_bottom = 2311.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect68" parent="WF" unique_id=1013620673 instance=ExtResource("3_3mhv4")]
+offset_left = 785.0
+offset_top = 1612.0
+offset_right = 829.0
+offset_bottom = 2319.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect66" parent="WF" unique_id=405996033 instance=ExtResource("3_3mhv4")]
+offset_left = 162.0
+offset_top = 1857.0
+offset_right = 515.0
+offset_bottom = 1896.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect71" parent="WF" unique_id=1163463143 instance=ExtResource("3_3mhv4")]
+offset_left = 1484.0
+offset_top = 1857.0
+offset_right = 1528.0
+offset_bottom = 2564.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect72" parent="WF" unique_id=1431689895 instance=ExtResource("3_3mhv4")]
+offset_left = 1790.0
+offset_top = 1857.0
+offset_right = 1834.0
+offset_bottom = 2564.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect73" parent="WF" unique_id=1939985326 instance=ExtResource("3_3mhv4")]
+offset_left = 1484.0
+offset_top = 1857.0
+offset_right = 1837.0
+offset_bottom = 1896.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect69" parent="WF" unique_id=559017883 instance=ExtResource("3_3mhv4")]
+offset_left = 791.0
+offset_top = 2283.0
+offset_right = 1144.0
+offset_bottom = 2322.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect74" parent="WF" unique_id=2136739669 instance=ExtResource("3_3mhv4")]
+offset_left = 2333.0
+offset_top = 1596.0
+offset_right = 2377.0
+offset_bottom = 2303.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect75" parent="WF" unique_id=1607457115 instance=ExtResource("3_3mhv4")]
+offset_left = 2007.0
+offset_top = 1604.0
+offset_right = 2051.0
+offset_bottom = 2311.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect76" parent="WF" unique_id=834639923 instance=ExtResource("3_3mhv4")]
+offset_left = 2013.0
+offset_top = 2275.0
+offset_right = 2366.0
+offset_bottom = 2314.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect77" parent="WF" unique_id=783136373 instance=ExtResource("3_3mhv4")]
+offset_left = 2567.0
+offset_top = 1938.0
+offset_right = 2714.0
+offset_bottom = 1977.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect39" parent="WF" unique_id=907217683 instance=ExtResource("3_3mhv4")]
+offset_left = -244.0
+offset_top = 1581.0
+offset_right = 2705.0
+offset_bottom = 1629.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect31" parent="WF" unique_id=456292746 instance=ExtResource("3_3mhv4")]
+offset_left = -2607.0
+offset_top = 2533.0
+offset_right = 2701.0
+offset_bottom = 2559.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect32" parent="WF" unique_id=1003238601 instance=ExtResource("3_3mhv4")]
+offset_left = -2582.0
+offset_top = -1498.0
+offset_right = 2726.0
+offset_bottom = -1472.0
+color = Color(1, 1, 1, 1)
+
+[node name="ColorRect14" parent="WF" unique_id=1871963272 instance=ExtResource("3_3mhv4")]
+offset_left = -1264.0
+offset_top = 1159.0
+offset_right = -36.0
+offset_bottom = 1195.0
+color = Color(1, 1, 1, 1)
+
+[node name="Node2D" type="Node2D" parent="WF" unique_id=336812805 groups=["Tilemap"]]
+position = Vector2(-1020, -316)
+
+[node name="Area2D" type="Area2D" parent="WF" unique_id=1044147492 groups=["Tilemap"]]
+position = Vector2(2630, 1806)
+script = ExtResource("4_rf6l5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WF/Area2D" unique_id=447864316]
+position = Vector2(5.5, -21.5)
+shape = SubResource("RectangleShape2D_syshm")
+
+[node name="Label" type="Label" parent="WF/Area2D" unique_id=1937953817]
+offset_left = -168.0
+offset_top = -121.0
+offset_right = 43.0
+offset_bottom = -39.0
+theme_override_font_sizes/font_size = 32
+text = "R - Restart
+"
+
+[node name="Label" type="Label" parent="WF" unique_id=2097580166 groups=["Tilemap"]]
+offset_left = -1228.0
+offset_top = -572.0
+offset_right = -638.0
+offset_bottom = -289.0
+text = "How To Play:
+
+Space - Jump   				                   The timer will start once you do jump, roll, or move.
+B or C - Roll
+N -  High Gravity                Get to the bottom-left corner.
+
+Mechanics:
+Jump Roll: Doing a jump into a roll allows you to jump again.
+Roll Fly: You can do infinite Jump Rolls as long you are in the air
+
+"

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bj6wy22hnmros"]
+
+[ext_resource type="Texture2D" path="res://exports/Objects/dani_objs/art_atlas.png" id="1_hb031"]
+[ext_resource type="Script" path="res://exports/marker.gd" id="2_rt7hi"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=902318860]
+z_index = 4096
+texture_filter = 1
+texture = ExtResource("1_hb031")
+hframes = 5
+script = ExtResource("2_rt7hi")
